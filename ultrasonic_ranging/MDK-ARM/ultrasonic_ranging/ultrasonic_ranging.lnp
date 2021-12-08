@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"ultrasonic_ranging\startup_stm32f103xb.o"
+"ultrasonic_ranging\main.o"
+"ultrasonic_ranging\gpio.o"
+"ultrasonic_ranging\i2c.o"
+"ultrasonic_ranging\tim.o"
+"ultrasonic_ranging\stm32f1xx_it.o"
+"ultrasonic_ranging\stm32f1xx_hal_msp.o"
+"ultrasonic_ranging\oled.o"
+"ultrasonic_ranging\stm32f1xx_hal_gpio_ex.o"
+"ultrasonic_ranging\stm32f1xx_hal_i2c.o"
+"ultrasonic_ranging\stm32f1xx_hal_tim.o"
+"ultrasonic_ranging\stm32f1xx_hal_tim_ex.o"
+"ultrasonic_ranging\stm32f1xx_hal.o"
+"ultrasonic_ranging\stm32f1xx_hal_rcc.o"
+"ultrasonic_ranging\stm32f1xx_hal_rcc_ex.o"
+"ultrasonic_ranging\stm32f1xx_hal_gpio.o"
+"ultrasonic_ranging\stm32f1xx_hal_dma.o"
+"ultrasonic_ranging\stm32f1xx_hal_cortex.o"
+"ultrasonic_ranging\stm32f1xx_hal_pwr.o"
+"ultrasonic_ranging\stm32f1xx_hal_flash.o"
+"ultrasonic_ranging\stm32f1xx_hal_flash_ex.o"
+"ultrasonic_ranging\stm32f1xx_hal_exti.o"
+"ultrasonic_ranging\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ultrasonic_ranging\ultrasonic_ranging.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ultrasonic_ranging.map" -o ultrasonic_ranging\ultrasonic_ranging.axf
